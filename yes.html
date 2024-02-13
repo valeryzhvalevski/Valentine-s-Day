@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./yes.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">
+        <img src="./img/photos/image1.jpeg" alt="image" class="image1">
+        <img src="./img/photos/image2.jpeg" alt="image" class="image2">
+        <img src="./img/photos/image3.jpeg" alt="image" class="image3">
+        <img src="./img/photos/image4.jpeg" alt="image" class="image4">
+        <img src="./img/photos/image5.jpeg" alt="image" class="image5">
+        <img src="./img/photos/image6.jpeg" alt="image" class="image6">
+        <img src="./img/photos/image7.jpeg" alt="image" class="image7">
+        <img src="./img/photos/image8.jpeg" alt="image" class="image8">
+        <img src="./img/photos/image9.jpeg" alt="image" class="image9">
+        <img src="./img/photos/image10.jpeg" alt="image" class="image10">
+        <img src="./img/photos/image11.jpeg" alt="image" class="image11">
+        <img src="./img/photos/image12.jpeg" alt="image" class="image12">
+        <img src="./img/photos/image13.jpeg" alt="image" class="image13">
+        <img src="./img/photos/image14.jpeg" alt="image" class="image14">
+        <img src="./img/photos/image15.jpeg" alt="image" class="image15">
+        <img src="./img/photos/image16.jpeg" alt="image" class="image16">
+        <img src="./img/photos/image17.jpeg" alt="image" class="image17">
+        <img src="./img/photos/image18.jpeg" alt="image" class="image18">
+        <img src="./img/photos/image19.jpeg" alt="image" class="image19">
+        <img src="./img/photos/image20.jpeg" alt="image" class="image20">
+        <img src="./img/photos/image21.jpeg" alt="image" class="image21">
+        <img src="./img/photos/image22.jpeg" alt="image" class="image22">
+        <img src="./img/photos/image23.jpeg" alt="image" class="image23">
+        <img src="./img/photos/image24.jpeg" alt="image" class="image24">
+        <img src="./img/photos/image25.jpeg" alt="image" class="image25">
+        <img src="./img/photos/image26.jpeg" alt="image" class="image26">
+    </div>
+    <script>
+const images = document.querySelectorAll('.box img');
+let index = 0;
+
+function fadeInImage() {
+  if (index < images.length) {
+    images[index].style.opacity = '1';
+    index++;
+    setTimeout(fadeInImage, 2000); // Вызываем функцию снова через 1 секунду
+  }
+}
+
+fadeInImage();
+      </script>
+  </body>
+</html>
